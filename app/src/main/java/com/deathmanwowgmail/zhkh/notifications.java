@@ -11,5 +11,6 @@ public class notifications extends AppCompatActivity {
         setContentView(R.layout.activity_notifications);
         //3232323
         //Сережа хоть и гей,но молодец.!!&& Серега,увидь эти изменения!Ещё разок!
+        //Поддурживаю
     }
 }
