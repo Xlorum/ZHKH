@@ -10,5 +10,6 @@ public class notifications extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
         //3232323
+        //Сережа хоть и гей,но молодец.
     }
 }
