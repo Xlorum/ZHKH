@@ -7,15 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:id="@+id/win1"
-    tools:context="com.deathmanwowgmail.zhkh.ActivityTwo">
+    android:id="@+id/win2"
+    tools:context="com.deathmanwowgmail.zhkh.ActivityThree">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="80dp" />
 </LinearLayout>

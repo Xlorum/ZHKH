@@ -1,21 +1,17 @@
 package com.deathmanwowgmail.zhkh;
 
-import android.app.Activity;
+//import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-
-import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
-import android.widget.ViewFlipper;
 
-public class notifications extends Activity implements OnTouchListener
+public class notifications extends AppCompatActivity implements OnTouchListener
 {
     //Объявление переменных
-    private ViewFlipper flipper = null;
     private float fromPosition;
 
     //Создание Activity
@@ -28,13 +24,7 @@ public class notifications extends Activity implements OnTouchListener
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.main_layout);
         mainLayout.setOnTouchListener(this);
 
-        flipper = (ViewFlipper) findViewById(R.id.viewFlipper);
 
-        //Создание View и добавление их в ViewFlipper
-        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        int layouts[] = new int[]{ R.layout.activity_notifications, R.layout.activity_two };
-        for (int layout : layouts)
-            flipper.addView(inflater.inflate(layout, null));
     }
 
     //Слайдинг при косании
@@ -50,16 +40,17 @@ public class notifications extends Activity implements OnTouchListener
                 if (fromPosition > toPosition)
                 {
                     //Слайдинг вправо
-                    flipper.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.go_next_in));
-                    flipper.setOutAnimation(AnimationUtils.loadAnimation(this,R.anim.go_next_out));
-                    flipper.showNext();
+
+                    Intent intent = new Intent(this, ActivityTwo.class);
+                    finish();
+                    startActivity(intent);
                 }
                 else if (fromPosition < toPosition)
                 {
-                    //Слайдинг влево
-                    flipper.setInAnimation(AnimationUtils.loadAnimation(this,R.anim.go_prev_in));
-                    flipper.setOutAnimation(AnimationUtils.loadAnimation(this,R.anim.go_prev_out));
-                    flipper.showPrevious();
+                    //Слайдинг вправо
+                    Intent intent2 = new Intent(this, ActivityThree.class);
+                    finish();
+                    startActivity(intent2);
                 }
             default:
                 break;
