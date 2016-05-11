@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">ZHKH</string>
     <string name="notification">Оповещение</string>
-    <string name="win1">Окно 1</string>
-    <string name="win2">Окно 2</string>
+    <string name="info">Информация</string>
+    <string name="win1">Окно 2</string>
+    <string name="titleServise">Вас обслуживает\nЖЭС №7</string>
+    <string name="descrServise">Адрес: Подвойского пр., д.16, корп.1\nТел.: 588-03-22\nРежим работы: пн-чт - с 9 до 18 часов, пт - с 9 до 17 часов, обед с 13 до 14 часов.</string>
+    <string name="ruler">Ответственные лица</string>
+    <string name="rulerDescr">Начальник: Полубояров Андрей Семенович\nПрием граждан: пн: c 17 до 19 часов, чт: с 10 до 12 часов\nГлавный инженер: Семенов Дмитрий Валерьевич\nтел.: 588-81-82\nПрием граждан: вт: с 10 до 12 часов, ср: с 17 до 19 часов</string>
+    <string name="accaunting">Бухгалтерия</string>
+    <string name="accauntingDescr">Адрес: Подвойского пр., д.16, корп.2\nТел.: 588-91-48\nРежим работы: понедельник, среда, четверг - 15:00-19:00, вторник, пятница - 9:00-13:00.</string>
+    <string name="dispetcher">Аварийно-Диспетчерская служба</string>
+    <string name="dispetcherDescr">Адрес: Искровский пр., д. 6, корп. 3\nТел.: 308-88-01, 308-88-02\nРежим работы: круглосуточно.</string>
+
 </resources>

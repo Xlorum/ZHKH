@@ -9,23 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".notifications"
-            android:label="@string/notification">
+            android:name=".ActivityInfo"
+            android:label="@string/info">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ActivityTwo"
-            android:label="@string/win1">
-
-        </activity>
-        <activity
-            android:name=".ActivityThree"
-            android:label="@string/win2">
-
         </activity>
     </application>
 

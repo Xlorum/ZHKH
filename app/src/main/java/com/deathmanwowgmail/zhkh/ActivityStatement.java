@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.LinearLayout;
 
-public class ActivityTwo extends AppCompatActivity implements OnTouchListener {
+public class ActivityStatement extends AppCompatActivity implements OnTouchListener {
 
     //Объявление переменных
     private float fromPosition;
@@ -16,7 +16,7 @@ public class ActivityTwo extends AppCompatActivity implements OnTouchListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two);
+        setContentView(R.layout.activity_statement);
 
         LinearLayout win1 = (LinearLayout) findViewById(R.id.win1);
         win1.setOnTouchListener(this);
@@ -37,7 +37,7 @@ public class ActivityTwo extends AppCompatActivity implements OnTouchListener {
                 if (fromPosition > toPosition)
                 {
                     //Слайдинг вправо
-                    Intent intent = new Intent(this, ActivityThree.class);
+                    Intent intent = new Intent(this, ActivityInfo.class);
                     finish();
                     startActivity(intent);
                 }

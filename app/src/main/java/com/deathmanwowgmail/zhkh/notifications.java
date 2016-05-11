@@ -41,14 +41,14 @@ public class notifications extends AppCompatActivity implements OnTouchListener
                 {
                     //Слайдинг вправо
 
-                    Intent intent = new Intent(this, ActivityTwo.class);
+                    Intent intent = new Intent(this, ActivityStatement.class);
                     finish();
                     startActivity(intent);
                 }
                 else if (fromPosition < toPosition)
                 {
                     //Слайдинг вправо
-                    Intent intent2 = new Intent(this, ActivityThree.class);
+                    Intent intent2 = new Intent(this, ActivityInfo.class);
                     finish();
                     startActivity(intent2);
                 }
