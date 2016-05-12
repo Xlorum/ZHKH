@@ -30,7 +30,8 @@ public class notifications extends AppCompatActivity implements View.OnTouchList
 
         for(int i=0; i<10; i++){
             chanel_layout frame = new chanel_layout(getApplicationContext());
-            frame.setNewsTitle("Новость");
+
+            frame.setNewsTitle("sdfdf");
             frame.setNewsContent("Content");
             win2.addView(frame);
         }

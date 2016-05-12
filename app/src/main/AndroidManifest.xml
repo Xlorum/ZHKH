@@ -10,11 +10,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ActivityInfo"
-            android:label="@string/info">
-        </activity>
+            android:label="@string/info"></activity>
         <activity
             android:name=".notifications"
-            android:label="Main" >
+            android:label="Новости">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +22,15 @@
         </activity>
         <activity
             android:name=".ActivityStatement"
-            android:label="Main2" >
+            android:label="Main2">
+
         </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true">
+
+        </service>
     </application>
 
 </manifest>

@@ -10,12 +10,15 @@
     android:id="@+id/win1"
     tools:context=".ActivityStatement">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="80dp" />
+        android:text="Старт"
+        android:id="@+id/play" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стоп"
+        android:id="@+id/stop" />
 </LinearLayout>
