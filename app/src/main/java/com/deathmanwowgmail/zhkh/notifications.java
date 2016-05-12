@@ -6,13 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.Toast;
 
-public class notifications extends AppCompatActivity implements OnTouchListener
-{
+
+public class notifications extends AppCompatActivity implements View.OnTouchListener {
     //Объявление переменных
     private float fromPosition;
+    private LinearLayout win2;
+
 
     //Создание Activity
     @Override
@@ -21,43 +24,48 @@ public class notifications extends AppCompatActivity implements OnTouchListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
-        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.main_layout);
-        mainLayout.setOnTouchListener(this);
 
+        win2 = (LinearLayout) findViewById(R.id.main_layout);
+        win2.setOnTouchListener(this);
 
+        for(int i=0; i<10; i++){
+            chanel_layout frame = new chanel_layout(getApplicationContext());
+            frame.setNewsTitle("Новость");
+            frame.setNewsContent("Content");
+            win2.addView(frame);
+        }
     }
 
-    //Слайдинг при косании
+
     public boolean onTouch(View view, MotionEvent event)
     {
-        switch (event.getAction())
-        {
-            case MotionEvent.ACTION_DOWN:
-                fromPosition = event.getX();
-                break;
-            case MotionEvent.ACTION_UP:
-                float toPosition = event.getX();
-                if (fromPosition > toPosition)
+                switch (event.getAction())
                 {
-                    //Слайдинг вправо
+                    case MotionEvent.ACTION_DOWN:
+                        fromPosition = event.getX();
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        float toPosition = event.getX();
+                        if (fromPosition > toPosition)
+                        {
+                            //Слайдинг влево
+                            Intent intent1 = new Intent(this, ActivityStatement.class);
+                            finish();
+                            startActivity(intent1);
 
-                    Intent intent = new Intent(this, ActivityStatement.class);
-                    finish();
-                    startActivity(intent);
+                        }
+                        else if (fromPosition < toPosition)
+                        {
+                            //Слайдинг вправо
+                            Intent intent3 = new Intent(this, ActivityInfo.class);
+                            finish();
+                            startActivity(intent3);
+                        }
+                    default:
+                        break;
                 }
-                else if (fromPosition < toPosition)
-                {
-                    //Слайдинг вправо
-                    Intent intent2 = new Intent(this, ActivityInfo.class);
-                    finish();
-                    startActivity(intent2);
-                }
-            default:
-                break;
-        }
         return true;
     }
-
 
 
 }

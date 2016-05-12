@@ -11,11 +11,19 @@
         <activity
             android:name=".ActivityInfo"
             android:label="@string/info">
+        </activity>
+        <activity
+            android:name=".notifications"
+            android:label="Main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityStatement"
+            android:label="Main2" >
         </activity>
     </application>
 
