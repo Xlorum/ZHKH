@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
+import android.view.animation.Animation;
 
 
 public class notifications extends AppCompatActivity implements View.OnTouchListener {
     //Объявление переменных
     private float fromPosition;
     private LinearLayout win2;
+
+
 
 
     //Создание Activity
@@ -38,6 +42,7 @@ public class notifications extends AppCompatActivity implements View.OnTouchList
     }
 
 
+
     public boolean onTouch(View view, MotionEvent event)
     {
                 switch (event.getAction())
@@ -49,9 +54,11 @@ public class notifications extends AppCompatActivity implements View.OnTouchList
                         float toPosition = event.getX();
                         if (fromPosition > toPosition)
                         {
+
                             //Слайдинг влево
                             Intent intent1 = new Intent(this, ActivityStatement.class);
                             finish();
+                            overridePendingTransition(R.anim.go_next_in, R.anim.go_next_out);
                             startActivity(intent1);
 
                         }
@@ -60,6 +67,7 @@ public class notifications extends AppCompatActivity implements View.OnTouchList
                             //Слайдинг вправо
                             Intent intent3 = new Intent(this, ActivityInfo.class);
                             finish();
+                            overridePendingTransition(R.anim.go_prev_in, R.anim.go_prev_out);
                             startActivity(intent3);
                         }
                     default:

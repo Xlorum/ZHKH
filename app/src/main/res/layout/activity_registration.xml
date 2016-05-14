@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.deathmanwowgmail.zhkh.Registration">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/serialPass"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationFieldStyle"
+        android:hint="@string/hintSerialPass"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numbPass"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationFieldStyle"
+        android:hint="@string/hintNumbPass"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateBirth"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationFieldStyle"
+        android:hint="@string/hintBirth"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/area"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationFieldStyle"
+        android:hint="@string/hintArea"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/streets"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationFieldStyle"
+        android:hint="@string/hintStreet"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/house"
+            android:layout_gravity="center_horizontal"
+            style="@style/registrationFieldStyle"
+            android:hint="@string/hintHouse"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hesHouse"
+            android:layout_gravity="center_horizontal"
+            style="@style/registrationFieldStyle"
+            android:hint="@string/hintHesHouse"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flat"
+            android:layout_gravity="center_horizontal"
+            style="@style/registrationFieldStyle"
+            android:hint="@string/hintFlat"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:id="@+id/registration"
+        android:layout_gravity="center_horizontal"
+        style="@style/registrationButton" />
+
+</LinearLayout>

@@ -11,5 +11,30 @@
     <string name="accauntingDescr">Адрес: Подвойского пр., д.16, корп.2\nТел.: 588-91-48\nРежим работы: понедельник, среда, четверг - 15:00-19:00, вторник, пятница - 9:00-13:00.</string>
     <string name="dispetcher">Аварийно-Диспетчерская служба</string>
     <string name="dispetcherDescr">Адрес: Искровский пр., д. 6, корп. 3\nТел.: 308-88-01, 308-88-02\nРежим работы: круглосуточно.</string>
-    
+
+
+    <string name="entryBnt">Войти</string>
+    <string name="entryRegBnt">Регистрация</string>
+    <string name="cancel">Отмена</string>
+    <string-array name="streets">
+        <item>Антонова-Овсеенко</item>
+        <item>Тельмана</item>
+        <item>Большевиков</item>
+        <item>Белышева</item>
+        <item>Якорная</item>
+        <item>Энергетиков</item>
+    </string-array>
+    <!--Регистрация-->
+    <string name="registration">Зарегистрироваться</string>
+
+    <!--Hint-ы-->
+    <string name="hintBirth">Дата рождения</string>
+    <string name="hintArea">Район</string>
+    <string name="hintSerialPass">Серия паспорта</string>
+    <string name="hintNumbPass">Номер паспорта</string>
+    <string name="hintStreet">Улица</string>
+    <string name="hintHouse">Дом</string>
+    <string name="hintHesHouse">Корпус</string>
+    <string name="hintFlat">Квартира</string>
+
 </resources>

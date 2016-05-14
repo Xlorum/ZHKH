@@ -34,12 +34,16 @@ public class ActivityInfo extends AppCompatActivity implements View.OnTouchListe
                 {
                     //Слайдинг вправо
                     Intent intent = new Intent(this, notifications.class);
+                    finish();
+                    overridePendingTransition(R.anim.go_next_in, R.anim.go_next_out);
                     startActivity(intent);
                 }
                 else if (fromPosition < toPosition)
                 {
                     //Слайдинг вправо
-                    Intent intent2 = new Intent(this, notifications.class);
+                    Intent intent2 = new Intent(this, ActivityStatement.class);
+                    finish();
+                    overridePendingTransition(R.anim.go_prev_in, R.anim.go_prev_out);
                     startActivity(intent2);
                 }
             default:

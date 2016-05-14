@@ -13,24 +13,29 @@
             android:label="@string/info"></activity>
         <activity
             android:name=".notifications"
-            android:label="Новости">
+            android:label="Новости"></activity>
+        <activity
+            android:name=".ActivityStatement"
+            android:label="Main2" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Registration"
+            android:label="Регистрация">
+
+        </activity>
+        <activity android:name=".test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <uses-permission android:name="android.permission.INTERNET" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ActivityStatement"
-            android:label="Main2">
-
-        </activity>
-
-        <service
-            android:name=".MyService"
-            android:enabled="true">
-
-        </service>
     </application>
 
 </manifest>

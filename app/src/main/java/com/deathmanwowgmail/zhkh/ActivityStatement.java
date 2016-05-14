@@ -53,6 +53,7 @@ public class ActivityStatement extends AppCompatActivity implements OnTouchListe
                     //Слайдинг вправо
                     Intent intent = new Intent(this, ActivityInfo.class);
                     finish();
+                    overridePendingTransition(R.anim.go_next_in, R.anim.go_next_out);
                     startActivity(intent);
                 }
                 else if (fromPosition < toPosition)
@@ -60,6 +61,7 @@ public class ActivityStatement extends AppCompatActivity implements OnTouchListe
                     //Слайдинг вправо
                     Intent intent2 = new Intent(this, notifications.class);
                     finish();
+                    overridePendingTransition(R.anim.go_prev_in, R.anim.go_prev_out);
                     startActivity(intent2);
                 }
             default:
